@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>House Price Prediction</title>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <meta content="Free HTML Templates" name="keywords">
+    <meta content="Free HTML Templates" name="description">
+
+    <!-- Favicon -->
+
+
+    <!-- Google Web Fonts -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Jost:wght@500;600;700&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet"> 
+
+    <!-- Icon Font Stylesheet -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet">
+
+    <!-- Libraries Stylesheet -->
+
+
+<link href="{{ url_for('static', filename='lib/owlcarousel/assets/owl.carousel.min.css') }}" rel="stylesheet">
+<link href="{{ url_for('static', filename='lib/animate/animate.min.css') }}" rel="stylesheet">
+<link href="{{ url_for('static', filename='lib/tempusdominus/css/tempusdominus-bootstrap-4.min.css') }}" rel="stylesheet" />
+<link href="{{ url_for('static', filename='lib/twentytwenty/twentytwenty.css') }}" rel="stylesheet" />
+<link href="{{ url_for('static', filename='css/bootstrap.min.css') }}" rel="stylesheet">
+<link href="{{ url_for('static', filename='css/style.css') }}" rel="stylesheet">
+
+
+</head>
+
+<body>
+    <!-- Spinner Start -->
+    <div id="spinner" class="show bg-white position-fixed translate-middle w-100 vh-100 top-50 start-50 d-flex align-items-center justify-content-center">
+        <div class="spinner-grow text-primary m-1" role="status">
+            <span class="sr-only">Loading...</span>
+        </div>
+        <div class="spinner-grow text-dark m-1" role="status">
+            <span class="sr-only">Loading...</span>
+        </div>
+        <div class="spinner-grow text-secondary m-1" role="status">
+            <span class="sr-only">Loading...</span>
+        </div>
+    </div>
+    <!-- Spinner End -->
+
+
+    <!-- Topbar Start -->
+
+    <!-- Topbar End -->
+
+
+    <!-- Navbar Start -->
+    <nav class="navbar navbar-expand-lg bg-white navbar-light shadow-sm px-5 py-3 py-lg-0">
+        <a href="#" class="navbar-brand p-0">
+            <h1 class="m-0 text-primary"><i class="fa fa-home"></i>User</h1>
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarCollapse">
+            <div class="navbar-nav ms-auto py-0">
+                <a href="#" class="nav-item nav-link">View this in your mobile on <b>{{url}}</b></a>
+                <a href="#" class="nav-item nav-link active">Logged in : <b>{{data}}</b></a>
+            </div>
+            
+        </div>
+    </nav>
+    <!-- Navbar End -->
+
+
+    <!-- Full Screen Search Start -->
+    <div class="modal fade" id="searchModal" tabindex="-1">
+        <div class="modal-dialog modal-fullscreen">
+            <div class="modal-content" style="background: rgba(9, 30, 62, .8);">
+                <div class="modal-header border-0">
+                    <button type="button" class="btn bg-white btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body d-flex align-items-center justify-content-center">
+                    <div class="input-group" style="max-width: 600px;">
+                        <input type="text" class="form-control bg-transparent border-primary p-3" placeholder="Type search keyword">
+                        <button class="btn btn-primary px-4"><i class="bi bi-search"></i></button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+     <div class="container-fluid bg-primary py-5 hero-header mb-5">
+        <div class="row py-3">
+            <div class="col-12 text-center">
+                <h1 class="display-3 text-white animated zoomIn">LSTM for House Price Prediction</h1>
+            </div>
+        </div>
+    </div>
+ <div class="container-fluid py-5 wow fadeInUp" data-wow-delay="0.1s">
+        <div class="container">
+            <div class="row g-5">
+                <div class="col-lg-8">
+                    <div class="section-title mb-4">
+                        <h5 class="position-relative d-inline-block text-primary text-uppercase">Principle</h5>
+                        <h1 class="display-5 mb-0">Contains 88 layers</h1>
+                    </div>
+                    <p class="mb-4">Long Short-Term Memory (LSTM) is a type of recurrent neural network (RNN) designed to handle long-term dependencies in sequential data. It uses specialized memory cells to retain and control information flow, mitigating the vanishing gradient problem. LSTMs are widely used in various tasks like natural language processing, time series prediction, and more.                    </p>
+                    <h5 class="text-uppercase text-primary wow fadeInUp" data-wow-delay="0.3s">Fill the form to know the Loan eligiblity of the house</h5>
+                </div>
+              
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+     <div class="container-fluid py-5">
+        <div class="container">
+
+            <div class="row g-5">
+                <div class="col-xl-12 col-lg-12 wow slideInUp" data-wow-delay="0.1s">
+                    <div class="bg-light rounded h-100 p-5">
+                        <div class="section-title">
+                            <h5 class="position-relative d-inline-block text-primary text-uppercase">Max Loan Reimbursement for House</h5>
+                            <h1 class="display-6 mb-4">Get Prediction NOW</h1>
+                        </div>
+                        <div class="d-flex align-items-center mb-2">
+                            <i class="bi bi-file-image fs-1 text-primary me-3"></i>
+                            <div class="text-start">
+                                <h5 class="mb-0">Fill the details</h5>
+                            </div>
+                        </div>
+                        <div class="d-flex align-items-center mb-2">
+                            <i class="bi bi-info-circle-fill fs-1 text-primary me-3"></i>
+                            <div class="text-start">
+                                <h5 class="mb-0">Predict the Price of the house</h5>
+                            </div>
+                        </div>
+                        <div class="d-flex align-items-center">
+                            <i class="bi bi-file-bar-graph-fill fs-1 text-primary me-3"></i>
+                            <div class="text-start">
+                                <h5 class="mb-0">Accurate prediction</h5>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xl-12 col-lg-12 wow slideInUp" data-wow-delay="0.3s">
+                    <div class="bg-light rounded h-100 p-5">
+                        <div class="section-title">
+                            <h5 class="position-relative d-inline-block text-primary text-uppercase">Analysis</h5>
+                            <h1 class="display-6 mb-4">Provide Details Below to Predict the Loan Vlaue of the house</h1>
+                        </div>
+            <form action="{{url_for('loan_predict')}}" method='post' enctype="multipart/form-data">
+            <div class="row g-3">
+            <div class="col-xl-6 col-lg-6">
+            <select id="house_type" name = "house_type" class="form-control border-0 bg-light px-4" style="height: 55px;" required>
+                <option disabled selected value="">House Type</option>
+                <option value="Independent">Independent</option>
+                <option value="Apartment">Apartment</option>
+            </select></div>
+            <div class="col-xl-6 col-lg-6">
+            <input type="number"  min="1" max="10" name="number_of_bedrooms" class="form-control border-0 bg-light px-4" placeholder="Number of Bedrooms" style="height: 55px;">
+        </div>
+        <div class="col-xl-6 col-lg-6">
+            <input type="number"  min="1" max="8" name="number_of_bathrooms" class="form-control border-0 bg-light px-4" placeholder="Number of Bathrooms" style="height: 55px;">
+        </div>
+        <div class="col-xl-6 col-lg-6">
+            <input type="number"  min="100" name="living_area" class="form-control border-0 bg-light px-4" placeholder="Living Area" style="height: 55px;">
+        </div>
+        <div class="col-xl-6 col-lg-6">
+            <input type="number"  min="100" name="plot_area" class="form-control border-0 bg-light px-4" placeholder="Plot Area" style="height: 55px;">
+        </div>
+        <div class="col-xl-6 col-lg-6">
+            <input type="number"  min="1" name="number_of_floors" class="form-control border-0 bg-light px-4" placeholder="Number of Floors" style="height: 55px;">
+        </div>
+        <div class="col-xl-6 col-lg-6">
+            <select id="waterfront_present" name="waterfront_present" class="form-control border-0 bg-light px-4" style="height: 55px;" required>
+                <option disabled selected value="">Waterfront Present?</option>
+                <option value="Yes">Yes</option>
+                <option value="No">No</option>
+              </select>
+        </div>  
+        <div class="col-xl-6 col-lg-6">
+            <select id="Condition" name = "condition_of_the_house" class="form-control border-0 bg-light px-4" style="height: 55px;" required>
+                <option disabled selected value="">Condition of the House</option>
+                <option value="Excellent" style="background-color: green; color: white;font-weight: bold;">Excellent</option>
+                <option value="Best" style="background-color: green; color: white;font-weight: bold;">Best</option>
+                <option value="Better" style="background-color: yellow; color: white;font-weight: bold;">Better</option>
+                <option value="Good" style="background-color: yellow; color: white;font-weight: bold;">Good</option>
+                <option value="Fair" style="background-color: orange; color: white;font-weight: bold;">Fair</option>
+                <option value="Okay" style="background-color: orange; color: white;font-weight: bold;">Okay</option>
+                <option value="Poor" style="background-color: orangered; color: white;font-weight: bold;">Poor</option>
+                <option value="Bad" style="background-color: orangered; color: white;font-weight: bold;">Bad</option>
+                <option value="Worse" style="background-color: darkred; color: white;font-weight: bold;">Worse</option>
+                <option value="Worst" style="background-color: darkred; color: white;font-weight: bold;">Worst/Unfit</option>
+              </select>
+        </div>
+        <div class="col-xl-6 col-lg-6">
+            <select id="grade_of_the_house" name = "grade_of_the_house" class="form-control border-0 bg-light px-4" style="height: 55px;" required>
+                <option disabled selected value="">Grade of the House</option>
+                <option value="Excellent" style="background-color: green; color: white;font-weight: bold;">Excellent</option>
+                <option value="Best" style="background-color: green; color: white;font-weight: bold;">Best</option>
+                <option value="Better" style="background-color: yellow; color: white;font-weight: bold;">Better</option>
+                <option value="Good" style="background-color: yellow; color: white;font-weight: bold;">Good</option>
+                <option value="Fair" style="background-color: orange; color: white;font-weight: bold;">Fair</option>
+                <option value="Okay" style="background-color: orange; color: white;font-weight: bold;">Okay</option>
+                <option value="Poor" style="background-color: orangered; color: white;font-weight: bold;">Poor</option>
+                <option value="Bad" style="background-color: orangered; color: white;font-weight: bold;">Bad</option>
+                <option value="Worse" style="background-color: darkred; color: white;font-weight: bold;">Worse</option>
+                <option value="Worst" style="background-color: darkred; color: white;font-weight: bold;">Worst/Unfit</option>
+              </select>
+        </div>
+        <div class="col-xl-6 col-lg-6">
+            <input type="number" name="number_of_balcony" min = "0" class="form-control border-0 bg-light px-4" placeholder="Number of Balcony" style="height: 55px;">
+        </div>
+        <div class="col-xl-6 col-lg-6">
+            <input type="number" name="number_of_gardens" min = "0" class="form-control border-0 bg-light px-4" placeholder="Number of Gardens" style="height: 55px;">
+        </div>
+        <div class="col-xl-6 col-lg-6">
+            <input type="number" name="area_of_the_house" min = "100" class="form-control border-0 bg-light px-4" placeholder="Area of the House (excluding basement)" style="height: 55px;">
+        </div>
+        <div class="col-xl-6 col-lg-6">
+            <input type="number" name="area_of_the_basement" min = "100" class="form-control border-0 bg-light px-4" placeholder="Area of the Basement" style="height: 55px;">
+        </div>
+        <div class="col-xl-6 col-lg-6">
+            <input type="number" name="built_year" min = "1940" max="2023" class="form-control border-0 bg-light px-4" placeholder="Built Year" style="height: 55px;">
+        </div>
+        <div class="col-xl-6 col-lg-6">
+            <input type="number" name="renovation_year" min = "1940" max="2023" class="form-control border-0 bg-light px-4" placeholder="Renovation Year (Leave Blank if no renovation)" style="height: 55px;">
+        </div>
+        <div class="col-xl-6 col-lg-6">
+            <input type="number" name="number_of_schools_nearby" min = "0" class="form-control border-0 bg-light px-4" placeholder="Number of Schools Nearby" style="height: 55px;">
+        </div>
+        <div class="col-xl-6 col-lg-6">
+            <input type="number" name="floor" min = "0" class="form-control border-0 bg-light px-4" placeholder="Floor (If Apartment)" style="height: 55px;">
+        </div>
+        <div class="col-xl-6 col-lg-6">
+            <input type="number" name="distance_from_the_airport" min = "0" class="form-control border-0 bg-light px-4" placeholder="Distance from the Airport" style="height: 55px;">
+        </div>
+        <div class="col-xl-6 col-lg-6">
+            <input type="number" name="hospitals_nearby" min = "0" class="form-control border-0 bg-light px-4" placeholder="Hospitals Nearby" style="height: 55px;">
+        </div>
+        <div class="col-xl-6 col-lg-6">
+            <input type="number" name="malls_nearby" min = "0" class="form-control border-0 bg-light px-4" placeholder="Malls Nearby" style="height: 55px;">
+        </div>
+        <div class="col-xl-6 col-lg-6">
+            <input type="number" name="distance_from_city_center" min = "0" class="form-control border-0 bg-light px-4" placeholder="Distance from City Center" style="height: 55px;">
+        </div>
+        <div class="col-xl-6 col-lg-6">
+            <select id="zone_reputation" name = "zone_reputation" class="form-control border-0 bg-light px-4" style="height: 55px;" required>
+                <option disabled selected value="">Zone Reputation</option>
+                <option value="City Center">City Center</option>
+                <option value="Suburban/City">Suburban/City</option>
+                <option value="Commercial">Commercial</option>
+                <option value="Industrial">Industrial</option>
+                <option value="Residential">Residential</option>
+                <option value="Rural">Rural</option>
+                <option value="Outskirts">Outskirts</option>
+                <option value="Countryside">Countryside</option>
+                <option value="Remote">Remote</option>
+                <option value="Wilderness">Wilderness</option>
+              </select>
+        </div>
+                        </div><br><br>
+                        <center><input type='submit' name='submit' value='Predict Loan' class="btn btn-primary py-3 px-4"></center>
+                    </form>
+                </div>
+                
+            </div>
+            </div>
+        </div>
+    </div>
+  
+
+     <div class="container-fluid text-light py-4" style="background: #051225;">
+        <div class="container">
+            <div class="row g-0">
+                <div class="col-md-6 text-center text-md-start">
+                    <p class="mb-md-0">&copy; <a class="text-white border-bottom" href="#">House Price Prediction</a>. All Rights Reserved.</p>
+                </div>
+                
+            </div>
+        </div>
+    </div>
+    <!-- Footer End -->
+
+
+    <!-- Back to Top -->
+    <a href="#" class="btn btn-lg btn-primary btn-lg-square rounded back-to-top"><i class="bi bi-arrow-up"></i></a>
+
+
+    <!-- JavaScript Libraries -->
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="{{ url_for('static', filename='lib/wow/wow.min.js')}}"></script>
+    <script src="{{ url_for('static', filename='lib/easing/easing.min.js')}}"></script>
+    <script src="{{ url_for('static', filename='lib/waypoints/waypoints.min.js')}}"></script>
+    <script src="{{ url_for('static', filename='lib/owlcarousel/owl.carousel.min.js')}}"></script>
+    <script src="{{ url_for('static', filename='lib/tempusdominus/js/moment.min.js')}}"></script>
+    <script src="{{ url_for('static', filename='lib/tempusdominus/js/moment-timezone.min.js')}}"></script>
+    <script src="{{ url_for('static', filename='lib/tempusdominus/js/tempusdominus-bootstrap-4.min.js')}}"></script>
+    <script src="{{ url_for('static', filename='lib/twentytwenty/jquery.event.move.js')}}"></script>
+    <script src="{{ url_for('static', filename='lib/twentytwenty/jquery.twentytwenty.js')}}"></script>
+
+    <!-- Template Javascript -->
+    <script src="{{ url_for('static', filename='js/main.js')}}"></script>
+</body>
+
+</html>
