@@ -1,6 +1,13 @@
+# Ignore large or unnecessary files
 Softwares/
 UPI Fraud/Model/
-Softwares/
-UPI Fraud/Model/
-Softwares/
-UPI Fraud/Model/
+
+# Ignore typical Python cache and environment files
+__pycache__/
+*.pyc
+*.pyo
+*.pkl
+.env/
+venv/
+.idea/
+.vscode/
